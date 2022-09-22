@@ -19,26 +19,25 @@ y += vsp;
 col_npc = collide_with_villager(32);
 
 if(col_npc != noone){
-	if (keyAction && !npc_talking){
+	if (Input_ActionPress && !npc_talking){
 		sel_state = 0;
-		keyAction = false;
+		Input_ActionPress = false;
 		npc_talking = true;
 	}
 }
 
 
-
 if(npc_talking){
-	var _statelength =	array_length(col_npc.state_list);
-	if(keyUpPress)		sel_state = max(0, --sel_state);
-	if(keyDownPress)	sel_state = min(_statelength - 1, ++sel_state);
-	if(keyAction) {
+	var _statelength = array_length(col_npc.state_list);
+	if(Input_UpPress) sel_state = max(0, --sel_state);
+	if(Input_DownPress) sel_state = min(_statelength - 1, ++sel_state);
+	if(Input_ActionPress) {
 		npc_set_state(col_npc, sel_state);
 		npc_talking = false;
 	}
 	
-	if(keyCancel){
-		keyCancel = false;
+	if(Input_CancelPress){
+		Input_CancelPress = false;
 		npc_talking = false;
 	}
 }

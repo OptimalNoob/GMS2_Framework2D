@@ -1,5 +1,9 @@
-/// @desc description
+/// @desc
 
+name = "";
+type = "";
+sprite = "";
+talkable = false;
 current_state = 0;
 state_list = [
 	["idle"],
@@ -7,4 +11,5 @@ state_list = [
 	["chop"],
 	["mine"],
 	["farm"],
+	["delete"]
 ]

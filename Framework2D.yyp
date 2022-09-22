@@ -15,6 +15,7 @@
     {"id":{"name":"oNPC","path":"objects/oNPC/oNPC.yy",},"order":1,},
     {"id":{"name":"misc_utility","path":"scripts/misc_utility/misc_utility.yy",},"order":1,},
     {"id":{"name":"INPUTS","path":"scripts/INPUTS/INPUTS.yy",},"order":5,},
+    {"id":{"name":"sTalkable","path":"sprites/sTalkable/sTalkable.yy",},"order":4,},
     {"id":{"name":"npc_state_controls","path":"scripts/npc_state_controls/npc_state_controls.yy",},"order":3,},
     {"id":{"name":"fntDev01","path":"fonts/fntDev01/fntDev01.yy",},"order":0,},
     {"id":{"name":"utility_drawing","path":"scripts/utility_drawing/utility_drawing.yy",},"order":0,},
